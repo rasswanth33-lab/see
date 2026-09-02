@@ -15,13 +15,9 @@
           violet: { 400: '#A56CFF', 500: '#7A3AFF', 600: '#6A2EE6' },
           purple: { 400: '#A56CFF', 500: '#7A3AFF', 600: '#6A2EE6' },
           zinc: {
-            200: '#2A3054', 300: '#3A4272', 400: '#5B6183', 500: '#767DA0',
-            600: '#9AA0C0', 700: '#C7CBDE', 800: '#E4E6F0', 900: '#F1EEF8',
+            200: '#E4E6F0', 300: '#C7CBDE', 400: '#9AA0C0', 500: '#767DA0',
+            600: '#3A4272', 700: '#232B57', 800: '#1A2350', 900: '#141C42',
           },
-          navy: '#0D1331',
-          'electric-blue': '#2563FF',
-          'vivid-purple': '#7A3AFF',
-          'soft-purple': '#A56CFF',
         },
         fontFamily: {
           display: ['Poppins', 'system-ui', 'sans-serif'],
@@ -133,44 +129,19 @@ scrollbar-width: none;
 <link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">
 .font-geist { font-family: 'Geist', sans-serif !important; }
 </style>
-<style>
-  /* Seeable Hub light theme: creamy white + rotating light into light purple */
-  html { background-color: #FBF7F0; }
-  .aura-rotating-light {
-    position: absolute; left: 50%; top: 50%;
-    width: 200vw; height: 200vw; margin-left: -100vw; margin-top: -100vw;
-    transform-origin: center center;
-    background: conic-gradient(from 0deg,
-      #C9A0FF, #7A3AFF, #A56CFF, #EFE4FF, #FBF7F0, #EFE4FF, #A56CFF, #7A3AFF, #C9A0FF);
-    filter: blur(60px); opacity: 0.9;
-    animation: aura-spin 22s linear infinite;
-  }
-  .aura-rotating-light::after {
-    content: ""; position: absolute; inset: 18%;
-    background: radial-gradient(circle at 30% 30%, rgba(122,58,255,0.55), transparent 60%);
-    border-radius: 50%; filter: blur(60px);
-  }
-  @keyframes aura-spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-  }
-
-  /* Text/surface flip for readability on the light ground */
-  body, .text-white { color: #0D1331 !important; }
-  .text-white\/70, .text-white\/60, .text-white\/50 { color: rgba(13,19,49,0.65) !important; }
-  .bg-\[\#0D1331\], .bg-\[\#0F1638\], .bg-\[\#141C42\], .bg-\[\#1A2350\] {
-    background-color: rgba(255,255,255,0.65) !important;
-    backdrop-filter: blur(8px);
-  }
-  .border-white\/10, .border-white\/5 { border-color: rgba(13,19,49,0.10) !important; }
-  .bg-black\/50 { background-color: rgba(255,255,255,0.6) !important; }
-  .bg-white\/5, .bg-white\/10 { background-color: rgba(122,58,255,0.05) !important; }
-</style>
 </head>
-  <body class="min-h-screen overflow-x-hidden selection:bg-vivid-purple/10 font-sans relative text-navy" style="font-family: 'Inter', sans-serif; background-color: transparent;">
-    <!-- Rotating light background: creamy white -> light purple -->
-    <div class="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden="true" style="z-index:0;">
-      <div class="aura-rotating-light"></div>
+  <body class="min-h-screen overflow-x-hidden selection:bg-white/10 font-sans bg-[#0D1331] relative text-white" style="font-family: 'Inter', sans-serif;">
+    <!-- Background (component) added by Aura -->
+    <div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-75" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)">
+      <div class="aura-background-component top-0 w-full -z-10 absolute h-full">
+        <div data-us-project="uFY4IYPs2LU8fWm96Im2" class="absolute w-full h-full left-0 top-0 -z-10"></div>
+        <script type="text/javascript">
+          !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+        </script>
+        <!-- Dark-purple tint over the moving light rays -->
+        <div class="absolute inset-0 pointer-events-none" style="background:#6D28D9; mix-blend-mode:multiply;"></div>
+        <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(60% 50% at 50% 0%, rgba(122,58,255,0.35), transparent 70%); mix-blend-mode:screen;"></div>
+      </div>
     </div>
 
     <!-- Background Glow Effects -->
