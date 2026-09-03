@@ -136,21 +136,36 @@ scrollbar-width: none;
 .projects-carousel::-webkit-scrollbar {
 display: none;
 }
-/* Premium cream surfaces; the rotating light component above remains unchanged. */
+/* Premium cream glass surfaces; the rotating light component above remains unchanged. */
 body [class*="bg-[#0D1331]"] {
-background-color: #fffdf8 !important;
+background-color: rgba(255, 253, 248, 0.58) !important;
+backdrop-filter: blur(24px) saturate(120%);
+-webkit-backdrop-filter: blur(24px) saturate(120%);
+border-color: rgba(255, 255, 255, 0.72) !important;
+box-shadow: 0 18px 45px rgba(112, 91, 55, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
 }
 body [class*="bg-[#0F1638]"] {
-background-color: #f3eadb !important;
+background-color: rgba(243, 234, 219, 0.64) !important;
+backdrop-filter: blur(24px) saturate(120%);
+-webkit-backdrop-filter: blur(24px) saturate(120%);
+border-color: rgba(255, 255, 255, 0.68) !important;
+box-shadow: 0 18px 45px rgba(112, 91, 55, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
 }
 body [class*="bg-[#141C42]"] {
-background-color: #ebe0cd !important;
+background-color: rgba(235, 224, 205, 0.54) !important;
+backdrop-filter: blur(20px) saturate(115%);
+-webkit-backdrop-filter: blur(20px) saturate(115%);
+border-color: rgba(255, 255, 255, 0.62) !important;
 }
 body [class*="bg-[#1A2350]"] {
-background-color: #dfd1b7 !important;
+background-color: rgba(223, 209, 183, 0.56) !important;
+backdrop-filter: blur(18px) saturate(115%);
+-webkit-backdrop-filter: blur(18px) saturate(115%);
 }
 body [class~="bg-zinc-900"] {
-background-color: #e7dcc8 !important;
+background-color: rgba(231, 220, 200, 0.62) !important;
+backdrop-filter: blur(18px) saturate(115%);
+-webkit-backdrop-filter: blur(18px) saturate(115%);
 }
 body [class*="text-white"] {
 color: #30291f !important;
