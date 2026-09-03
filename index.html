@@ -127,6 +127,12 @@ display: none;
 -ms-overflow-style: none;
 scrollbar-width: none;
 }
+.projects-carousel {
+scrollbar-width: none;
+}
+.projects-carousel::-webkit-scrollbar {
+display: none;
+}
 </style>
 <meta name="aura-font-heading-class" content="font-geist">
 <meta name="aura-font-body-class" content="font-sans">
@@ -1185,10 +1191,11 @@ scrollbar-width: none;
         </p>
       </div>
 
-      <div class="flex gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory pb-4 max-w-6xl mx-auto [scrollbar-width:none] [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+      <div id="projects-carousel" class="projects-carousel flex gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory pb-4 max-w-6xl mx-auto [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
         <div class="flex flex-col min-w-[280px] sm:min-w-[320px] lg:min-w-[300px] flex-shrink-0 snap-start bg-[#0F1638] border rounded-3xl p-8 hover:bg-white/[0.02] transition-colors relative shadow-[0_20px_40px_rgba(0,0,0,0.3)] border-white/5">
-          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex items-center justify-center">
+          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex flex-col gap-3 items-center justify-center">
             <iconify-icon icon="solar:widget-linear" class="text-4xl text-blue-400" style="stroke-width:1.5;"></iconify-icon>
+            <span class="text-xs uppercase tracking-widest text-zinc-400">Fleet Management &amp; Co</span>
           </div>
           <span class="text-[11px] uppercase tracking-wider font-medium px-2.5 py-1 rounded-full border bg-white/5 text-zinc-300 border-white/10 self-start mb-4">Real Estate</span>
           <h3 class="text-xl font-medium tracking-tight mb-2 font-geist text-white">
@@ -1204,8 +1211,9 @@ scrollbar-width: none;
         </div>
 
         <div class="flex flex-col min-w-[280px] sm:min-w-[320px] lg:min-w-[300px] flex-shrink-0 snap-start bg-[#0F1638] border rounded-3xl p-8 hover:bg-white/[0.02] transition-colors relative shadow-[0_20px_40px_rgba(0,0,0,0.3)] border-white/5">
-          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex items-center justify-center">
+          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex flex-col gap-3 items-center justify-center">
             <iconify-icon icon="solar:global-linear" class="text-4xl text-purple-400" style="stroke-width:1.5;"></iconify-icon>
+            <span class="text-xs uppercase tracking-widest text-zinc-400">CRAV</span>
           </div>
           <span class="text-[11px] uppercase tracking-wider font-medium px-2.5 py-1 rounded-full border bg-white/5 text-zinc-300 border-white/10 self-start mb-4">Restaurant</span>
           <h3 class="text-xl font-medium tracking-tight mb-2 font-geist text-white">
@@ -1221,8 +1229,9 @@ scrollbar-width: none;
         </div>
 
         <div class="flex flex-col min-w-[280px] sm:min-w-[320px] lg:min-w-[300px] flex-shrink-0 snap-start bg-[#0F1638] border rounded-3xl p-8 hover:bg-white/[0.02] transition-colors relative shadow-[0_20px_40px_rgba(0,0,0,0.3)] border-white/5">
-          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex items-center justify-center">
+          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex flex-col gap-3 items-center justify-center">
             <iconify-icon icon="solar:card-linear" class="text-4xl text-blue-400" style="stroke-width:1.5;"></iconify-icon>
+            <span class="text-xs uppercase tracking-widest text-zinc-400">Aetheria Wellness</span>
           </div>
           <span class="text-[11px] uppercase tracking-wider font-medium px-2.5 py-1 rounded-full border bg-white/5 text-zinc-300 border-white/10 self-start mb-4">Wellness</span>
           <h3 class="text-xl font-medium tracking-tight mb-2 font-geist text-white">
@@ -1237,8 +1246,9 @@ scrollbar-width: none;
           </a>
         </div>
         <div class="flex flex-col min-w-[280px] sm:min-w-[320px] lg:min-w-[300px] flex-shrink-0 snap-start bg-[#0F1638] border rounded-3xl p-8 hover:bg-white/[0.02] transition-colors relative shadow-[0_20px_40px_rgba(0,0,0,0.3)] border-white/5">
-          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex items-center justify-center">
+          <div class="h-40 rounded-2xl mb-6 bg-gradient-to-br from-blue-500/20 to-purple-600/20 border border-white/5 flex flex-col gap-3 items-center justify-center">
             <iconify-icon icon="solar:palette-linear" class="text-4xl text-purple-400" style="stroke-width:1.5;"></iconify-icon>
+            <span class="text-xs uppercase tracking-widest text-zinc-400">Substance Lab</span>
           </div>
           <span class="text-[11px] uppercase tracking-wider font-medium px-2.5 py-1 rounded-full border bg-white/5 text-zinc-300 border-white/10 self-start mb-4">Digital Design</span>
           <h3 class="text-xl font-medium tracking-tight mb-2 font-geist text-white">
@@ -1419,5 +1429,46 @@ scrollbar-width: none;
   <script>
     var y = document.getElementById('year');
     if (y) y.textContent = new Date().getFullYear();
+
+    var projectsCarousel = document.getElementById('projects-carousel');
+    if (projectsCarousel) {
+      var carouselTimer;
+      var isCarouselPaused = false;
+
+      function advanceProjects() {
+        if (isCarouselPaused) return;
+        var projectCard = projectsCarousel.querySelector(':scope > div');
+        if (!projectCard) return;
+        var cardStep = projectCard.offsetWidth + 24;
+        var isAtEnd = projectsCarousel.scrollLeft + projectsCarousel.clientWidth >= projectsCarousel.scrollWidth - 4;
+        projectsCarousel.scrollTo({
+          left: isAtEnd ? 0 : projectsCarousel.scrollLeft + cardStep,
+          behavior: 'smooth'
+        });
+      }
+
+      function startProjectsTimer() {
+        clearInterval(carouselTimer);
+        carouselTimer = setInterval(advanceProjects, 4000);
+      }
+
+      function pauseProjects() {
+        isCarouselPaused = true;
+        clearInterval(carouselTimer);
+      }
+
+      function resumeProjects() {
+        isCarouselPaused = false;
+        startProjectsTimer();
+      }
+
+      projectsCarousel.addEventListener('mouseenter', pauseProjects);
+      projectsCarousel.addEventListener('mouseleave', resumeProjects);
+      projectsCarousel.addEventListener('focusin', pauseProjects);
+      projectsCarousel.addEventListener('focusout', resumeProjects);
+      projectsCarousel.addEventListener('touchstart', pauseProjects, { passive: true });
+      projectsCarousel.addEventListener('touchend', resumeProjects, { passive: true });
+      startProjectsTimer();
+    }
   </script>
 </body></html>
