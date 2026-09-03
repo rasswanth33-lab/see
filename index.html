@@ -21,8 +21,8 @@
           violet: { 400: '#F1E5C7', 500: '#D8BD83', 600: '#B8955B' },
           purple: { 400: '#F1E5C7', 500: '#D8BD83', 600: '#B8955B' },
           zinc: {
-            200: '#E4E6F0', 300: '#C7CBDE', 400: '#9AA0C0', 500: '#767DA0',
-            600: '#3A4272', 700: '#232B57', 800: '#1A2350', 900: '#141C42',
+            200: '#4F4638', 300: '#6F6454', 400: '#807461', 500: '#9A8D78',
+            600: '#B7A98F', 700: '#D6C8AD', 800: '#E7DCC8', 900: '#F0E8D8',
           },
         },
         fontFamily: {
@@ -136,6 +136,28 @@ scrollbar-width: none;
 .projects-carousel::-webkit-scrollbar {
 display: none;
 }
+/* Premium cream surfaces; the rotating light component above remains unchanged. */
+body [class*="bg-[#0D1331]"] {
+background-color: #fffdf8 !important;
+}
+body [class*="bg-[#0F1638]"] {
+background-color: #f3eadb !important;
+}
+body [class*="bg-[#141C42]"] {
+background-color: #ebe0cd !important;
+}
+body [class*="bg-[#1A2350]"] {
+background-color: #dfd1b7 !important;
+}
+body [class~="bg-zinc-900"] {
+background-color: #e7dcc8 !important;
+}
+body [class*="text-white"] {
+color: #30291f !important;
+}
+body [class*="hover:text-white"]:hover {
+color: #17130f !important;
+}
 </style>
 <meta name="aura-font-heading-class" content="font-geist">
 <meta name="aura-font-body-class" content="font-sans">
@@ -147,7 +169,7 @@ display: none;
 </head>
   <body class="min-h-screen overflow-x-hidden selection:bg-white/10 font-sans bg-[#F7F0DF] relative text-white" style="font-family: 'Inter', sans-serif;">
     <!-- Background (component) added by Aura -->
-    <div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-75" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)">
+    <div class="aura-background-component fixed top-0 w-full h-screen -z-10 brightness-75" data-alpha-mask="80" style="; mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); mix-blend-mode: screen;">
       <div class="aura-background-component top-0 w-full -z-10 absolute h-full">
         <div data-us-project="uFY4IYPs2LU8fWm96Im2" class="absolute w-full h-full left-0 top-0 -z-10"></div>
         <script type="text/javascript">
@@ -270,7 +292,7 @@ display: none;
             <div class="flex items-start gap-4 text-lg font-normal group text-zinc-400">
               <iconify-icon icon="solar:check-circle-linear" class="w-6 h-6 flex items-center justify-center text-zinc-500 mt-0.5 group-hover:text-zinc-300 transition-colors flex-shrink-0" style="stroke-width: 1.5;"></iconify-icon>
               <span class="">
-                <span class="font-medium text-zinc-200">NFC Digital Solutions :</span>
+                <span class="font-medium text-zinc-200">Google Review Cards :</span>
                 connect, share, and impress with a tap
               </span>
             </div>
